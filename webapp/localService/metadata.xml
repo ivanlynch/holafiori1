@@ -1,0 +1,26 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZTEST_RFCV2_SRV" xml:lang="es" sap:schema-version="1">
+			<EntityType Name="WORKITEMS" sap:content-version="1">
+				<Key><PropertyRef Name="ZwiId"/></Key><Property Name="ILanguage" Type="Edm.String" Nullable="false" MaxLength="1" sap:label="Clave de idioma" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="IUser" Type="Edm.String" Nullable="false" MaxLength="12" sap:label="Usuario" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="EReturnCode" Type="Edm.Int32" Nullable="false" sap:label="Valor de retorno" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Zlogsys" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Sistema lógico" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ZwiId" Type="Edm.String" Nullable="false" MaxLength="12" sap:label="Identificación" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ZwiCd" Type="Edm.DateTime" Nullable="false" Precision="7" sap:label="Fecha creación" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ZwiCt" Type="Edm.Time" Nullable="false" Precision="0" sap:label="Creado a las" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Zobjtype" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Tipo objeto" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zinstid" Type="Edm.String" Nullable="false" MaxLength="70" sap:label="Identif.instancia" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zstatustext" Type="Edm.String" Nullable="false" MaxLength="20" sap:label="Status" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ZwiText" Type="Edm.String" Nullable="false" MaxLength="120" sap:label="Texto" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Ztextline" Type="Edm.String" Nullable="false" MaxLength="2000" sap:label="Carácter 2000" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ZdefGuid" Type="Edm.String" Nullable="false" MaxLength="40" sap:label="IDÚn" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="ZwiRhTask" Type="Edm.String" Nullable="false" MaxLength="14" sap:label="Tarea" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Altkey" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Índ." sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="Alttext" Type="Edm.String" Nullable="false" MaxLength="255" sap:label="Alternativa" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityContainer Name="ZTEST_RFCV2_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="WORKITEMSSet" EntityType="ZTEST_RFCV2_SRV.WORKITEMS" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/></EntityContainer><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/ZTEST_RFCV2_SRV/$metadata"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/ZTEST_RFCV2_SRV/$metadata"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
